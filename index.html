@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра "Memory"</title>
+    <link rel="icon" href="images/joker.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="launch-screen screen">
+            <img class="launch-screen__image" src="images/joker.svg" alt="Логотип">
+            <h1 class="launch-screen__title">Игра "Memory"</h1>
+            <button class="launch-screen__button button" tabindex="-1">Начать игру!</button>
+        </section>
+        <section class="game screen">
+            <div class="game__counter counter">Баллов: <span class="counter__points">0</span></div>
+            <div class="game__layout">
+                <div class="game__card card" data-value="1">
+                    <img class="card__img card__img--front" src="images/1.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="2">
+                    <img class="card__img card__img--front" src="images/2.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="3">
+                    <img class="card__img card__img--front" src="images/3.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="4">
+                    <img class="card__img card__img--front" src="images/4.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="5">
+                    <img class="card__img card__img--front" src="images/5.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="6">
+                    <img class="card__img card__img--front" src="images/6.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="7">
+                    <img class="card__img card__img--front" src="images/7.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="8">
+                    <img class="card__img card__img--front" src="images/8.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="9">
+                    <img class="card__img card__img--front" src="images/9.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="1">
+                    <img class="card__img card__img--front" src="images/1.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="2">
+                    <img class="card__img card__img--front" src="images/2.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="3">
+                    <img class="card__img card__img--front" src="images/3.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="4">
+                    <img class="card__img card__img--front" src="images/4.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="5">
+                    <img class="card__img card__img--front" src="images/5.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="6">
+                    <img class="card__img card__img--front" src="images/6.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="7">
+                    <img class="card__img card__img--front" src="images/7.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="8">
+                    <img class="card__img card__img--front" src="images/8.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+                <div class="game__card card" data-value="9">
+                    <img class="card__img card__img--front" src="images/9.svg" alt="Лицо карты">
+                    <img class="card__img card__img--back" src="images/back.svg" alt="Рубашка карты">
+                </div>
+            </div>
+            <button class="game__button button button--small button--green" tabindex="-1">Завершить игру</button>
+        </section>
+        <section class="result-screen screen">
+            <img class="result-screen__image" src="images/finish.png" alt="Финиш">
+            <h2 class="result-screen__title">Игра завершена!</h2>
+            <span class="result-screen__text">Вы набрали <span class="result-screen__points">999</span> баллов</span>
+            <button class="result-screen__button button" tabindex="-1">Повторить игру</button>
+        </section>
+    </main>
+
+</body>
+
+</html>
